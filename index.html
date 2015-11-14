@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>課題</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //文字列の表示
+        document.write("Hello World <br>");
+
+        //時間の表示
+        var jikan=new Date();
+        var hour=jikan.getHours();
+        var minute=jikan.getMinutes();
+　　　　　// <br> は、改行(break)を表している。
+        document.write("時刻"+hour+":"+minute+"<br>");
+
+        var str,num;  //入力文字を入れる変数
+        str = prompt("繰り返し回数を入れてください","");
+        num = parseInt(str);
+
+        //for 文はC#と同じにかける。
+        var i;
+        for(i=1;i<=num;i++){
+          document.write(i+"回目の繰り返しです！<br>");
+        }
+
+        //確認ボックスの表示
+        var flg;
+        flg = confirm("背景の色を紫にしてもいいですか")
+        if (flg == true) document.bgColor = "lavender"; //真なら背景色変更
+
+        //インプットボックスの表示
+        //インプットボックスの表示＆入力文字をstrに代入
+        str = prompt("お名前を教えて下さい。","");
+        //strが空の場合の処理
+        if (str == "") str = "名無しの権兵衛";
+        //名前を表示する
+        document.write("ようこそ、<b>" + str + "</b>さん！");
+    </script>
+</body>
+</html>
