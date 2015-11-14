@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>二元体上の行列演算</title>
+	<link rel="stylesheet" href="Mystyle.css" type="text/css">
+	<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+  </script>
+	<!-- href=Hyper Text Reference -->
+</head>
+<body>
+<!-- コンテナ -->
+<div id="container">
+	<!-- ヘッダー -->
+	<header>
+		<h1>二元体上の行列演算</h1>
+	</header>
+	<!-- コンテンツ -->
+	<section>
+		<h2>二元体	\(\mathbb{F}_2\)</h2>
+		<p>\(\mathbb{F}_2=\{0,1\}\)</p>
+		<p>\(\mathbb{F}_2\)の演算は、整数として計算した後、
+		計算結果が偶数なら\(0\)、奇数なら
+		\(1\)と置き換えればよい。</p>
+		<p>特に、任意の\(x \in \mathbb{F}_2\)に対し\(x+x=0\)が成立する。</p>
+
+		<h2>\(\mathbb{F}_2\)上の行列の演算</h2>
+		通常の行列の演算と同じ。但し加法、乗法の計算規則は、\(\mathbb{F}_2\)に従う。
+		\[
+		\begin{pmatrix}
+		0&1&1\\
+		\end{pmatrix}
+		\begin{pmatrix}
+		1&1&0\\
+		1&0&0\\
+		1&1&1
+		\end{pmatrix}
+		=\begin{pmatrix}
+		0&1&1
+		\end{pmatrix}
+		\]
+		<h2>数式入力の例</h2>
+
+			\[ \tanh x = \frac{ e^{x} - e^{-x} } { e^{x} + e^{-x} } \]
+			\[\left. \frac{1}{s^2 - s + 1} \right|_{s = 2} = \frac{1}{3}\]
+			\[\sqrt{ a + b + 2\sqrt{ab} } = \sqrt{a + b} \]
+			\[\int_0^1 x^2 dx= \left[  \frac{x^3}{3}  \right]_0^1=\frac{1}{3} \]
+
+
+	</section>
+	<!-- フッタ -->
+	<footer>
+		<hr>
+		<p>工学基礎I　レポート課題</p>
+	</footer>
+</div>
+</body>
+</html>
